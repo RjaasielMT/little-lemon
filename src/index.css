@@ -1,13 +1,206 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*Encabezado*/
+.header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "contenedorlogo menu";
+  justify-content: center;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contenedorlogo {
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 11vw;
+  margin-bottom: 10%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10vw;
+  font-size: 1.2vw;
+}
+
+li {
+  margin: 1.3%;
+  padding: 1%;
+  list-style: none;
+}
+
+a:link{
+  font-style: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+  }
+
+/*Principal*/
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 8%;
+  grid-template-areas: 'article div';
+  background-color: rgb(73, 94, 87);
+  justify-content: center;
+}
+
+
+.titulo {
+  font-size: 4vw;
+  color: #F4CE14;
+  margin: 30%;
+  margin-top: 5%;
+  margin-right: 0%;
+  margin-bottom: 2%;
+}
+
+.Subtitulo {
+  font-size: 2.5vw;
+  color: #EDEFEE;
+  margin-left: 30%;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+.descripciongeneral {
+  font-size: 1.7vw;
+  color: #EDEFEE;
+  margin-left: 30%;
+  margin-top: 0%;
+  margin-bottom: 3vw;
+}
+
+.button {
+  background-color: #F4CE14;
+  font-size: 1.6vw;
+  padding: 6%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-radius: 0.5rem;
+  margin-left: 30%;
+}
+
+.restauranfood {
+  width: 45%;
+  border-radius: 15%;
+  justify-content: right;
+  margin-top: 9%;
+  margin-bottom: 9%;
+  margin-left: 24%;
+}
+
+/*Articulo*/
+.head {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: 'h1 a';
+  grid-template-rows: 1fr;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.tituloespeciales {
+  font-size: 4vw;
+  margin-top: 8%;
+}
+
+.tabla {
+  display: grid;
+  grid-template-columns: 24vw 24vw 24vw;
+  grid-template-areas: 'div div div';
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 5%;
+  justify-items: center;
+  justify-content: center;
+}
+
+.especial {
+  background-color: #EDEFEE;
+  margin: 4%;
+  border-radius: 10%;
+  padding-bottom: 10%;
+}
+
+.plato {
+  width: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.nombreyprecio {
+  display: grid;
+  grid-column: 60% 40%;
+  grid-template-areas: 'h1 h2';
+  margin-left: 8%;
+  margin-top: 8%;
+}
+
+.nombre {
+  font-size: 1.7vw;
+}
+.precio {
+  font-size: 1.7vw;
+  color: rgb(245, 91, 91);
+}
+.descripcionespecial {
+  font-size: 1.3vw;
+  margin-left: 8%;
+}
+.order {
+  margin-left: 8%;
+  font-size: 1.1vw;
+}
+
+.btn {
+  margin-top: 25%;
+  font-size: 1.7vw;
+  justify-content: right;
+  margin-right: 10%;
+  background-color: #F4CE14;
+}
+
+/*Footer*/
+.footer {
+  display: grid;
+  grid-template-areas: 'li li div';
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.2vw;
+  background-color: #EDEFEE;
+  justify-content: center;
+  border-top-style: groove;
+}
+
+.footer-header{
+  font-size: 1.7vw;
+}
+
+.contact{
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+.connect{
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.img-footer{
+  margin-right: 35%;
+  width: 50%;
+  margin-top: 5%;
 }
